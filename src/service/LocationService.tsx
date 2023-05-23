@@ -8,4 +8,5 @@ class LocationService {
     }).then(({latitude, longitude}) => ({latitude, longitude}));
   }
 }
+
 export default LocationService;

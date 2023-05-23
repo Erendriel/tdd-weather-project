@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   ViewProps,
   TouchableOpacity,
@@ -5,7 +6,6 @@ import {
   ActivityIndicator,
   Text,
 } from 'react-native';
-import React from 'react';
 import LinearGradient from 'react-native-linear-gradient';
 import {Colors} from '../constants';
 
@@ -21,7 +21,7 @@ const Button = (props: Props) => {
       <LinearGradient
         {...others}
         colors={[Colors.LIGHTER_GRAY, Colors.DARK_GRAY]}
-        style={(styles.container, style)}>
+        style={[styles.container, style]}>
         {loading ? (
           <ActivityIndicator
             testID="button-loading"
